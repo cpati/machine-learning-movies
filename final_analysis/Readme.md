@@ -35,7 +35,15 @@ We are using MovieLens datasets for our research and learning purpose. MovieLens
                                        Fig 2: PairPlot
    ```
    
- 
+
+## Data Enrichment
+#### First data enrichment 
+1. TMDB dataset ( https://www.kaggle.com/tmdb/tmdb-movie-metadata )
+2. Used in Linear regression problem 
+#### Second data enrichment
+1. For recommending appropriate movies to the user while considering their age, we scrapped content rating from IMDB dataset.
+2. The script for fetching the data through api and merging the datasets is in DataEnrichment file.
+
 ## Latent variables 
 ```
  Latent variables are ‘Movie_year’, ‘Movie_decade’ and ‘Liked’
@@ -47,7 +55,6 @@ We are using MovieLens datasets for our research and learning purpose. MovieLens
 Bucketing the movie year into a span of 10 years
 #### 3. Liked: 
 Created a new binary variable derived from movie ratings. Movie ratings vary from 1 to 5, Liked variable is 1 if user has give more that 3 rating to any movie, else liked variable is 0.
-
 
 ## Algorithms Used
  ### K-means
@@ -128,5 +135,5 @@ Created a new binary variable derived from movie ratings. Movie ratings vary fro
 | Chidananda Pati   | Prediction Engine, Decision Tree, Logistic Regression, Latent Manifold      |   
 
 &nbsp;
-#### Most of the movie recommendation models follow collaborative filtering. <br> An analysis of user-user based collaborative filtering and item-item based collaborative filtering uploaded as a separate notebook. 
+#### Most of the movie recommendation models follow collaborative filtering. An analysis of user-user based collaborative filtering and item-item based collaborative filtering uploaded as a separate notebook. 
  

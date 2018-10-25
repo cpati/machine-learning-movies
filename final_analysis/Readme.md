@@ -42,7 +42,7 @@ We are using MovieLens datasets for our research and learning purpose. MovieLens
 2. Used in Linear regression problem 
 #### Second data enrichment
 1. For recommending appropriate movies to the user while considering their age, we scrapped content rating from IMDB dataset.
-2. The script for fetching the data through api and merging the datasets is in DataEnrichment file.
+2. The script for fetching the data through api and merging the datasets is in DataEnrichment file. (https://github.com/cpati/machine-learning-movies/tree/master/DataEnrichment)
 
 ## Latent variables 
 ```
